@@ -17,7 +17,9 @@ describe Song do
   end
 
   it 'converts its name to a url friendly parameter' do
+
     song.name = "Jump Around"
+ 
     expect(song.to_param).to eq("jump-around")
   end
 
